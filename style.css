@@ -1,0 +1,91 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fa;
+  color: #333;
+}
+
+.container {  
+  max-width: 900px;
+  margin:20px auto;
+  padding: 20px;
+}
+
+/* Top Section */
+.top-section {
+  display: grid;
+  grid-template-columns:150px 1fr;
+  align-items: center;
+  background: #55cf9c;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 300px;
+}
+
+/* Profile Circle */
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  background: #d9ebe3;
+  border-radius: 50%;
+}
+
+/* About Text */
+.about-text h2 {
+  margin: 0 0 10px;
+  color: #2c3e50;
+  direction: rtl;
+}
+
+/* MY details */
+.bio {
+  justify-self: center;
+  white-space: wrap;
+}/*
+/*About Me Paragraph*/
+#me {
+    border: none;
+    width: 300px;
+    text-align: justify;
+    margin: auto;
+}
+
+
+/* Bottom Section */
+.bottom-section {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Down Boxes */
+.box {
+  background: #55cf9c;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.box h3 {
+  margin-top: auto;
+  text-align: center;
+  color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: 0 auto;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+}
